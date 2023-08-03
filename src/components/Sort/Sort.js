@@ -1,63 +1,84 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Icons } from "../../assets/Icons";
 import styles from "./Sort.module.scss";
+export const Sort = ({ onSortChange }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedSort, setSelectedSort] = useState(null);
 
-export const Sort = () => {
-  const [selectedSort, setSelectedSort] = useState(false);
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prevIsOpen) => !prevIsOpen);
+  };
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const sortButton = document.getElementById("sortButton");
+  const handleSort = () => {
+    onSortChange(selectedSort);
+    setIsDropdownOpen(false);
+  };
 
-    sortButton.addEventListener("click", () => {
-      const selectedOption = document.querySelector(
-        'input[name="sortOption"]:checked'
-      );
-
-      if (selectedOption) {
-        const selectedValue = selectedOption.value;
-        console.log("Selected option:", selectedValue);
-      } else {
-        console.log("No option selected");
-      }
-    });
-  });
+  const handleClear = () => {
+    setSelectedSort(null);
+    onSortChange(null); // Notify parent component of cleared sort
+  };
 
   return (
     <div className={styles.sort}>
       <div className={styles.sort__group}>
         <span>Sort</span>
-        {selectedSort ? (
-          <Icons.BsChevronUp
-            className={styles.icon}
-            onClick={() => setSelectedSort(false)}
-          />
+        {isDropdownOpen ? (
+          <Icons.BsChevronUp className={styles.icon} onClick={toggleDropdown} />
         ) : (
           <Icons.BsChevronDown
             className={styles.icon}
-            onClick={() => setSelectedSort(true)}
+            onClick={toggleDropdown}
           />
         )}
       </div>
-      {selectedSort && (
+      {isDropdownOpen && (
         <div className={styles.sort__dropdown}>
           <div className={styles.sort__dropdown__group}>
-            <input type="radio" value="a-z" name="sortOption" /> Alphabetical
-            a-z
+            <input
+              type="radio"
+              value="a-z"
+              name="sortOption"
+              checked={selectedSort === "a-z"}
+              onChange={() => setSelectedSort("a-z")}
+            />{" "}
+            Alphabetical a-z
           </div>
           <div className={styles.sort__dropdown__group}>
-            <input type="radio" value="z-a" name="sortOption" /> Alphabetical
-            z-a
+            <input
+              type="radio"
+              value="z-a"
+              name="sortOption"
+              checked={selectedSort === "z-a"}
+              onChange={() => setSelectedSort("z-a")}
+            />{" "}
+            Alphabetical z-a
           </div>
           <div className={styles.sort__dropdown__group}>
-            <input type="radio" value="priceAscending" name="sortOption" />{" "}
+            <input
+              type="radio"
+              value="priceAscending"
+              name="sortOption"
+              checked={selectedSort === "priceAscending"}
+              onChange={() => setSelectedSort("priceAscending")}
+            />{" "}
             Price ascending
           </div>
           <div className={styles.sort__dropdown__group}>
-            <input type="radio" value="priceDescending" name="sortOption" />{" "}
+            <input
+              type="radio"
+              value="priceDescending"
+              name="sortOption"
+              checked={selectedSort === "priceDescending"}
+              onChange={() => setSelectedSort("priceDescending")}
+            />{" "}
             Price descending
           </div>
-          <button id="sortButton" className="btn">
+          <button className="btn" onClick={handleSort}>
             Sort
+          </button>
+          <button className="btn" onClick={handleClear}>
+            Clear
           </button>
         </div>
       )}

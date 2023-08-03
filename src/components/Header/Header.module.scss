@@ -12,8 +12,7 @@
     &__auth a,
     &__search_bar,
     &__right_section,
-    &__right_section__cart a,
-    &__right_section__favorites a {
+    &__right_section__cart a {
       display: flex;
       align-items: center;
     }
@@ -67,6 +66,11 @@
     &__right {
       display: flex;
       align-items: center;
+    }
+    &__right {
+      a {
+        margin-right: 0.5rem;
+      }
     }
   }
 }

@@ -1,4 +1,11 @@
 .filter {
+  &__heading {
+    display: flex;
+    align-items: center;
+    .icon {
+      display: none;
+    }
+  }
   &__title {
     margin-bottom: 0.5rem;
   }
@@ -25,7 +32,39 @@
     width: 100%;
     background: none;
   }
+
   .icon:hover {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter {
+    position: relative;
+    &__group {
+      display: flex;
+      align-items: center;
+      span {
+        display: block;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+      }
+    }
+    &__dropdown {
+      position: absolute;
+      left: 0;
+      background: var(--c-background);
+      border: 1px solid var(--c-primary);
+      padding: 1rem;
+      width: 200px;
+    }
+    &__heading {
+      .icon {
+        display: block;
+      }
+    }
+    &__title {
+      font-size: 16px;
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
   }
 }

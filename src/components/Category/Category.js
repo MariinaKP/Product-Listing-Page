@@ -8,6 +8,11 @@ import styles from "./Category.module.scss";
 export const Category = ({ data }) => {
   const { category, subcategory } = useParams();
   const [openSortAndFilter, setOpenSortAndFilter] = useState(false);
+  const [selectedReviews, setSelectedReviews] = useState(null);
+  const [selectedPriceRange, setSelectedPriceRange] = useState(null);
+  const [selectedSort, setSelectedSort] = useState(null);
+
+  const [displayedProducts, setDisplayedProducts] = useState(8);
 
   const categoryData = data.categories.find(
     (catеgory) => catеgory.slug === category
@@ -20,8 +25,6 @@ export const Category = ({ data }) => {
 
   const products = subcategoryData ? subcategoryData.products : [];
 
-  const [displayedProducts, setDisplayedProducts] = useState(8);
-
   useEffect(() => {
     setDisplayedProducts(8);
   }, [subcategory]);
@@ -30,14 +33,13 @@ export const Category = ({ data }) => {
     setDisplayedProducts((prevDisplayedProducts) => prevDisplayedProducts + 8);
   };
 
-  const [selectedReviews, setSelectedReviews] = useState(null);
-  const [selectedPriceRange, setSelectedPriceRange] = useState(null);
-
   const handleFiltersChange = (selectedReviews, selectedPriceRange) => {
-    console.log("Category:");
-    console.log(selectedReviews, selectedPriceRange);
     setSelectedReviews(selectedReviews);
     setSelectedPriceRange(selectedPriceRange);
+  };
+
+  const handleSortChange = (selectedSort) => {
+    setSelectedSort(selectedSort);
   };
 
   const filteredProducts = products.filter((product) => {
@@ -51,9 +53,25 @@ export const Category = ({ data }) => {
         product.price >= parseFloat(from) && product.price <= parseFloat(to)
       );
     }
-
     return true;
   });
+
+  const sortProducts = (products, selectedSort) => {
+    switch (selectedSort) {
+      case "a-z":
+        return [...products].sort((a, b) => a.name.localeCompare(b.name));
+      case "z-a":
+        return [...products].sort((a, b) => b.name.localeCompare(a.name));
+      case "priceAscending":
+        return [...products].sort((a, b) => a.price - b.price);
+      case "priceDescending":
+        return [...products].sort((a, b) => b.price - a.price);
+      default:
+        return products;
+    }
+  };
+
+  const sortedProducts = sortProducts(filteredProducts, selectedSort);
 
   return (
     <main className="container">
@@ -70,11 +88,13 @@ export const Category = ({ data }) => {
               <div className={styles.subtitle}>{subcategory}</div>
             </div>
             <div className={styles.category__desktop__filter_sort}>
-              <Sort />
+              <Sort onSortChange={handleSortChange} />
             </div>
           </div>
           <div className={styles.category__mobile__filter_sort}>
-            <div onClick={() => setOpenSortAndFilter(!openSortAndFilter)}>
+            <Filter onFiltersChange={handleFiltersChange} />
+            <Sort />
+            {/* <div onClick={() => setOpenSortAndFilter(!openSortAndFilter)}>
               Sort & Filter
             </div>
             {openSortAndFilter && (
@@ -82,10 +102,10 @@ export const Category = ({ data }) => {
                 <Filter />
                 <Sort />
               </div>
-            )}
+            )} */}
           </div>
           <div className={styles.category__products__list}>
-            {filteredProducts.slice(0, displayedProducts).map((product) => (
+            {sortedProducts.slice(0, displayedProducts).map((product) => (
               <Product key={product.name} product={product} />
             ))}
           </div>
@@ -94,15 +114,15 @@ export const Category = ({ data }) => {
               <div>No products for this category.</div>
             ) : (
               <div>
-                {displayedProducts === products.length
+                {displayedProducts === filteredProducts.length
                   ? "All products"
                   : `You see ${Math.min(
                       displayedProducts,
-                      products.length
-                    )} out of ${products.length}`}
+                      filteredProducts.length
+                    )} out of ${filteredProducts.length}`}
               </div>
             )}
-            {displayedProducts < products.length && (
+            {displayedProducts < filteredProducts.length && (
               <button className="btn" onClick={handleLoadMore}>
                 Load More
               </button>
