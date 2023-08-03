@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--c-black);
+  padding: 1rem 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  a {
+    text-decoration: none;
+    color: var(--c-background);
+    font-size: 14px;
+  }
+}

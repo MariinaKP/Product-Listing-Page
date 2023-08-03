@@ -1,0 +1,27 @@
+.sort {
+  position: relative;
+  &__group {
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    right: 0;
+    background: var(--c-background);
+    border: 1px solid var(--c-primary);
+    padding: 1rem;
+    width: 200px;
+    &__group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      input {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}

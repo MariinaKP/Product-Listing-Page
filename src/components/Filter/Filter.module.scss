@@ -1,0 +1,31 @@
+.filter {
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+  &__group {
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+  }
+  .checkbox {
+    margin-right: 0.25rem;
+  }
+  .checkbox:hover {
+    cursor: pointer;
+  }
+  label {
+    font-size: 0.75rem;
+  }
+  .field {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--c-primary);
+    width: 100%;
+    background: none;
+  }
+  .icon:hover {
+    cursor: pointer;
+  }
+}

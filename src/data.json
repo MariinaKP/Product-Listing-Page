@@ -1,0 +1,549 @@
+{
+  "categories": [
+    {
+      "name": "Women",
+      "slug": "women",
+      "subcategories": [
+        {
+          "name": "T-shirt",
+          "slug": "t-shirt",
+          "products": [
+            {
+              "id": 1,
+              "name": "V-neck T-shirt",
+              "description": "A comfortable and stylish V-neck T-shirt for women.",
+              "price": 24.99,
+              "rating": 3
+            },
+            {
+              "id": 2,
+              "name": "Graphic Tee",
+              "description": "A trendy graphic T-shirt with unique designs.",
+              "price": 19.99,
+              "rating": 2
+            },
+            {
+              "id": 3,
+              "name": "Basic White Tee",
+              "description": "A classic and versatile white T-shirt for women.",
+              "price": 14.99,
+              "sale": 10.99,
+              "rating": 3
+            },
+            {
+              "id": 4,
+              "name": "Striped T-shirt",
+              "description": "A striped T-shirt with a comfortable fit.",
+              "price": 22.99,
+              "rating": 3
+            },
+            {
+              "id": 5,
+              "name": "Long Sleeve Tee",
+              "description": "A long-sleeved tee perfect for cooler days.",
+              "price": 29.99,
+              "rating": 3
+            },
+            {
+              "id": 6,
+              "name": "Crop Top",
+              "description": "A stylish crop top for summer fashion.",
+              "price": 18.99,
+              "rating": 4
+            },
+            {
+              "id": 7,
+              "name": "Oversized T-shirt",
+              "description": "An oversized T-shirt for a relaxed look.",
+              "price": 25.99,
+              "sale": 15.99,
+              "rating": 4
+            },
+            {
+              "id": 8,
+              "name": "Vintage Tee",
+              "description": "A vintage-inspired tee with a worn-out look.",
+              "price": 21.99,
+              "rating": 4
+            },
+            {
+              "id": 9,
+              "name": "Floral Print Tee",
+              "description": "A tee with a beautiful floral print.",
+              "price": 23.99,
+              "rating": 4
+            },
+            {
+              "id": 10,
+              "name": "Tie-Dye T-shirt",
+              "description": "A tie-dye T-shirt for a unique and colorful style.",
+              "price": 20.99,
+              "rating": 4
+            },
+            {
+              "id": 11,
+              "name": "Scoop Neck Tee",
+              "description": "A scoop neck tee for a flattering neckline.",
+              "price": 17.99,
+              "rating": 4
+            },
+            {
+              "id": 12,
+              "name": "Pocket Tee",
+              "description": "A tee with a front pocket for a casual look.",
+              "price": 19.99,
+              "sale": 9.99,
+              "rating": 4
+            },
+            {
+              "id": 13,
+              "name": "Ringer Tee",
+              "description": "A classic ringer tee with contrast color trim.",
+              "price": 22.99,
+              "rating": 4
+            },
+            {
+              "id": 14,
+              "name": "Henley T-shirt",
+              "description": "A henley-style tee with button details.",
+              "price": 24.99,
+              "rating": 4
+            },
+            {
+              "id": 15,
+              "name": "Polo Tee",
+              "description": "A polo-style tee for a sporty and casual look.",
+              "price": 26.99,
+              "rating": 4
+            },
+            {
+              "id": 16,
+              "name": "Crew Neck Tee",
+              "description": "A classic crew neck tee in various colors.",
+              "price": 15.99,
+              "rating": 4
+            },
+            {
+              "id": 17,
+              "name": "Varsity T-shirt",
+              "description": "A varsity-style tee for a retro vibe.",
+              "price": 21.99,
+              "rating": 4
+            },
+            {
+              "id": 18,
+              "name": "Printed T-shirt",
+              "description": "A T-shirt with fun and eye-catching prints.",
+              "price": 18.99,
+              "rating": 4
+            },
+            {
+              "id": 19,
+              "name": "Raglan Tee",
+              "description": "A raglan-sleeve tee for a sporty look.",
+              "price": 23.99,
+              "rating": 4
+            },
+            {
+              "id": 20,
+              "name": "Sleeveless Tee",
+              "description": "A sleeveless tee for warm weather.",
+              "price": 16.99,
+              "rating": 4
+            }
+          ]
+        },
+        {
+          "name": "Shirts & Blouses",
+          "slug": "shirts&blouses",
+          "products": [
+            {
+              "id": 21,
+              "name": "Button-Up Blouse",
+              "description": "A chic and elegant button-up blouse for women.",
+              "price": 34.99,
+              "rating": 2
+            },
+            {
+              "id": 22,
+              "name": "Flowy Peasant Top",
+              "description": "A flowy and comfortable peasant top with bohemian flair.",
+              "price": 29.99,
+              "sale": 20.99,
+              "rating": 2
+            },
+            {
+              "id": 23,
+              "name": "Classic White Shirt",
+              "description": "A timeless and versatile white shirt for every wardrobe.",
+              "price": 39.99,
+              "rating": 3
+            },
+            {
+              "id": 24,
+              "name": "Printed Silk Blouse",
+              "description": "A luxurious silk blouse with eye-catching prints.",
+              "price": 54.99,
+              "rating": 3
+            },
+            {
+              "id": 25,
+              "name": "Ruffled Collar Shirt",
+              "description": "A shirt with a delicate ruffled collar for a feminine look.",
+              "price": 42.99,
+              "sale": 22.99,
+              "rating": 2
+            },
+            {
+              "id": 26,
+              "name": "Wrap Front Blouse",
+              "description": "A wrap-front blouse that adds sophistication to any outfit.",
+              "price": 38.99,
+              "rating": 2
+            },
+            {
+              "id": 27,
+              "name": "Denim Shirt",
+              "description": "A casual and comfortable denim shirt for a relaxed style.",
+              "price": 36.99,
+              "rating": 3
+            },
+            {
+              "id": 28,
+              "name": "Bell Sleeve Blouse",
+              "description": "A blouse with trendy bell sleeves for a boho-chic look.",
+              "price": 33.99,
+              "rating": 3
+            },
+            {
+              "id": 29,
+              "name": "Striped Button-Down",
+              "description": "A striped button-down shirt perfect for office attire.",
+              "price": 37.99,
+              "rating": 3
+            },
+            {
+              "id": 30,
+              "name": "Lace Trim Camisole",
+              "description": "A delicate camisole with lace trim for a feminine touch.",
+              "price": 28.99,
+              "rating": 4
+            }
+          ]
+        },
+        {
+          "name": "Dresses",
+          "slug": "dresses",
+          "products": [
+            {
+              "id": 31,
+              "name": "A-Line Midi Dress",
+              "description": "A classic A-line midi dress for a sophisticated look.",
+              "price": 49.99,
+              "rating": 4
+            },
+            {
+              "id": 32,
+              "name": "Floral Maxi Dress",
+              "description": "A beautiful floral print maxi dress for summer.",
+              "price": 59.99,
+              "rating": 5
+            },
+            {
+              "id": 33,
+              "name": "Wrap Dress",
+              "description": "A flattering wrap dress that accentuates the waist.",
+              "price": 44.99,
+              "rating": 4
+            },
+            {
+              "id": 34,
+              "name": "Off-Shoulder Ruffle Dress",
+              "description": "An off-shoulder dress with elegant ruffle detailing.",
+              "price": 54.99,
+              "sale": 34.99,
+              "rating": 4
+            },
+            {
+              "id": 35,
+              "name": "Sleeveless Shift Dress",
+              "description": "A versatile sleeveless shift dress for any occasion.",
+              "price": 39.99,
+              "rating": 3
+            },
+            {
+              "id": 36,
+              "name": "Lace Fit-and-Flare Dress",
+              "description": "A charming lace fit-and-flare dress for a romantic vibe.",
+              "price": 52.99,
+              "rating": 5
+            },
+            {
+              "id": 37,
+              "name": "Pleated Chiffon Gown",
+              "description": "An ethereal pleated chiffon gown for special events.",
+              "price": 79.99,
+              "rating": 4
+            },
+            {
+              "id": 38,
+              "name": "Bodycon Mini Dress",
+              "description": "A figure-hugging bodycon mini dress for a bold look.",
+              "price": 47.99,
+              "rating": 4
+            },
+            {
+              "id": 39,
+              "name": "Halter Neck Maxi Dress",
+              "description": "A halter neck maxi dress with a flowy silhouette.",
+              "price": 62.99,
+              "sale": 42.99,
+              "rating": 4
+            },
+            {
+              "id": 40,
+              "name": "Tiered Boho Dress",
+              "description": "A boho-inspired tiered dress with a relaxed fit.",
+              "price": 45.99,
+              "rating": 3
+            },
+            {
+              "id": 41,
+              "name": "Asymmetric Hem Dress",
+              "description": "An edgy asymmetric hem dress for a modern look.",
+              "price": 51.99,
+              "rating": 5
+            },
+            {
+              "id": 42,
+              "name": "Fit-and-Flare Shirt Dress",
+              "description": "A shirt dress with a flattering fit-and-flare silhouette.",
+              "price": 48.99,
+              "rating": 4
+            },
+            {
+              "id": 43,
+              "name": "Embroidered Midi Dress",
+              "description": "A midi dress with intricate embroidered details.",
+              "price": 57.99,
+              "sale": 30.99,
+              "rating": 4
+            },
+            {
+              "id": 44,
+              "name": "Ruffled Wrap Dress",
+              "description": "A wrap dress with playful ruffled accents.",
+              "price": 53.99,
+              "rating": 3
+            },
+            {
+              "id": 45,
+              "name": "Knit Sweater Dress",
+              "description": "A cozy knit sweater dress for cooler days.",
+              "price": 46.99,
+              "rating": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Men",
+      "slug": "men",
+      "subcategories": [
+        {
+          "name": "T-shirt",
+          "slug": "t-shirt",
+          "products": [
+            {
+              "id": 46,
+              "name": "Classic White T-shirt",
+              "description": "A comfortable and versatile white t-shirt.",
+              "price": 24.99,
+              "rating": 4
+            },
+            {
+              "id": 47,
+              "name": "Graphic Print T-shirt",
+              "description": "A trendy t-shirt with a unique graphic print.",
+              "price": 29.99,
+              "sale": 20.99,
+              "rating": 5
+            },
+            {
+              "id": 48,
+              "name": "Striped Cotton T-shirt",
+              "description": "A stylish striped cotton t-shirt for casual wear.",
+              "price": 22.99,
+              "rating": 4
+            },
+            {
+              "id": 49,
+              "name": "Basic Black T-shirt",
+              "description": "An essential black t-shirt for everyday use.",
+              "price": 19.99,
+              "sale": 25.99,
+              "rating": 4
+            },
+            {
+              "id": 50,
+              "name": "Printed Logo T-shirt",
+              "description": "A t-shirt with a prominent logo print.",
+              "price": 27.99,
+              "rating": 3
+            },
+            {
+              "id": 51,
+              "name": "Retro Vintage T-shirt",
+              "description": "A throwback to vintage style with this t-shirt.",
+              "price": 34.99,
+              "rating": 5
+            },
+            {
+              "id": 52,
+              "name": "Cotton Blend T-shirt",
+              "description": "A comfortable cotton blend t-shirt with a relaxed fit.",
+              "price": 25.99,
+              "rating": 4
+            },
+            {
+              "id": 53,
+              "name": "V-neck T-shirt",
+              "description": "A classic v-neck t-shirt available in multiple colors.",
+              "price": 21.99,
+              "rating": 4
+            },
+            {
+              "id": 54,
+              "name": "Slogan Print T-shirt",
+              "description": "Make a statement with this slogan print t-shirt.",
+              "price": 23.99,
+              "rating": 3
+            },
+            {
+              "id": 55,
+              "name": "Long Sleeve T-shirt",
+              "description": "A versatile long sleeve t-shirt for cooler days.",
+              "price": 26.99,
+              "rating": 4
+            },
+            {
+              "id": 56,
+              "name": "Sporty Performance T-shirt",
+              "description": "Stay comfortable during workouts with this performance t-shirt.",
+              "price": 29.99,
+              "sale": 20.99,
+              "rating": 5
+            },
+            {
+              "id": 57,
+              "name": "Casual Henley T-shirt",
+              "description": "Upgrade your casual look with this henley-style t-shirt.",
+              "price": 24.99,
+              "rating": 4
+            },
+            {
+              "id": 58,
+              "name": "Color Block T-shirt",
+              "description": "Add a pop of color with this stylish color block t-shirt.",
+              "price": 28.99,
+              "rating": 4
+            },
+            {
+              "id": 59,
+              "name": "Pocket Detail T-shirt",
+              "description": "A t-shirt with a convenient chest pocket.",
+              "price": 22.99,
+              "rating": 3
+            },
+            {
+              "id": 60,
+              "name": "Slim Fit T-shirt",
+              "description": "A slim fit t-shirt that offers a modern look.",
+              "price": 27.99,
+              "rating": 4
+            }
+          ]
+        },
+        {
+          "name": "Shirts",
+          "slug": "shirts",
+          "products": [
+            {
+              "id": 61,
+              "name": "Classic Oxford Shirt",
+              "description": "A timeless oxford shirt for formal occasions.",
+              "price": 39.99,
+              "rating": 4
+            },
+            {
+              "id": 62,
+              "name": "Plaid Flannel Shirt",
+              "description": "A cozy flannel shirt with a stylish plaid pattern.",
+              "price": 44.99,
+              "rating": 5
+            },
+            {
+              "id": 63,
+              "name": "Denim Button-Up Shirt",
+              "description": "A versatile denim shirt for casual and rugged looks.",
+              "price": 37.99,
+              "rating": 4
+            },
+            {
+              "id": 64,
+              "name": "Striped Linen Shirt",
+              "description": "A lightweight linen shirt with a trendy striped design.",
+              "price": 32.99,
+              "sale": 22.99,
+              "rating": 4
+            },
+            {
+              "id": 65,
+              "name": "Business Formal Shirt",
+              "description": "A formal shirt for professional attire.",
+              "price": 49.99,
+              "rating": 5
+            },
+            {
+              "id": 66,
+              "name": "Printed Short Sleeve Shirt",
+              "description": "Stay cool and stylish with this printed short sleeve shirt.",
+              "price": 29.99,
+              "rating": 4
+            },
+            {
+              "id": 67,
+              "name": "Cotton Poplin Shirt",
+              "description": "A comfortable cotton poplin shirt for everyday wear.",
+              "price": 35.99,
+              "rating": 4
+            },
+            {
+              "id": 68,
+              "name": "Slim Fit Dress Shirt",
+              "description": "A modern slim fit dress shirt for a sharp look.",
+              "price": 42.99,
+              "rating": 4
+            },
+            {
+              "id": 69,
+              "name": "Casual Chambray Shirt",
+              "description": "A laid-back chambray shirt for a relaxed style.",
+              "price": 34.99,
+              "rating": 3
+            },
+            {
+              "id": 70,
+              "name": "Patterned Polo Shirt",
+              "description": "Elevate your casual look with this patterned polo shirt.",
+              "price": 27.99,
+              "sale": 20.99,
+              "rating": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

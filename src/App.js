@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
+import { Category } from "./components/Category/Category";
+import { CartProvider } from "./context/CartContext";
+
+import { Routes, Route, useNavigate } from "react-router-dom";
+import "./styles/main.scss";
+import data from "./data.json"; // TODO
 
 function App() {
+  const navigate = useNavigate();
+
+  const setDefaultRoute = () => {
+    navigate("/category/women/t-shirt");
+  };
+
+  useEffect(() => {
+    setDefaultRoute();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CartProvider>
+        <Header />
+        <Routes>
+          <Route
+            path="/category/:category/:subcategory?"
+            element={<Category data={data} />}
+          />
+        </Routes>
+        <Footer />
+      </CartProvider>
+    </>
   );
 }
 

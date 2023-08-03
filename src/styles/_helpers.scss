@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color var(--t-duration);
+  font-size: 14px;
+  color: var(--c-black);
+  border: 1px solid var(--c-black);
+  &:hover {
+    background-color: var(--c-black);
+    color: var(--c-background);
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.line {
+  border-top: 1px solid var(--c-primary);
+  width: 100%;
+}

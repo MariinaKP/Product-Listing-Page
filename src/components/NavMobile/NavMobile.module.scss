@@ -1,0 +1,48 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--c-background);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      text-align: center;
+    }
+
+    &__category {
+      font-weight: bold;
+    }
+    &__item {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+
+      li {
+        text-transform: capitalize;
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .close_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
